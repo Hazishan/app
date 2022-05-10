@@ -1,6 +1,3 @@
-import java.math.BigInteger;
-import java.util.Arrays;
-
 public class PolynomialGF2 {
 
     final boolean[] ZERO = null;
@@ -64,7 +61,7 @@ public class PolynomialGF2 {
         return new PolynomialGF2(intBool(solution));
     }
 
-    public String toPoly(){
+    public String toString(){
         String[] keys = {"1","x","x^2","x^3","x^4"};
         String poly = "";
         int runner = 0;
@@ -103,25 +100,22 @@ public class PolynomialGF2 {
         return gf2_copy;
     }
 
-    @Override
-    public String toString() {
-        return "PolynomialGF2{" +
-                "gf2=" + Arrays.toString(gf2) +
-                '}';
+    private String getBinaryString(){
+        String h = "";
+        for (int i = 0; i<= gf2.length-1;i++) {
+            if(gf2[i]){h+=1;}
+            else h+=0;
+        }
+        return h;
     }
 
 
 
     @Override
     public int hashCode() {
-        String h = "";
-        int b;
-        for (int i = 0; i<= gf2.length-1;i++) {
-            if(gf2[i]){h+=1;}
-            else h+=0;
-        }
-        b = Integer.parseInt(h,2);
-        return b;
+        String binaryString = getBinaryString();
+        int intval = Integer.parseInt(binaryString,2);
+        return intval;
     }
 
     public static void main(String[] args) {
@@ -130,15 +124,15 @@ public class PolynomialGF2 {
 
         System.out.println(Math.pow(2,3)%(Math.pow(2,3)+2+1));
 
-/*
+
         for(int i=1;i<=8;i++){
             PolynomialGF2 tmp = new PolynomialGF2((int) Math.pow(i,3));
             System.out.println(tmp.hashCode());
             PolynomialGF2 tmp_calc = tmp.mod(poly_mod);
 
-            System.out.println(i-1 + "\t" + tmp_calc.hashCode()+ "\t"+tmp_calc.toPoly());
+            System.out.println(i-1 + "\t" + tmp_calc.hashCode()+ "\t"+tmp_calc.toString());
 
         }
-*/
+
     }
 }
