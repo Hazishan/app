@@ -1,3 +1,5 @@
+package uebung01;
+
 import java.util.Arrays;
 
 public class PolynomialGF2 {
@@ -140,9 +142,10 @@ public class PolynomialGF2 {
 
     public static void main(String[] args) {
         PolynomialGF2 poly_mod = new PolynomialGF2(new boolean[] {true,false,true,true});
-        PolynomialGF2 base = new PolynomialGF2();
+        PolynomialGF2 base = new PolynomialGF2(5);
         PolynomialGF2 base2 = new PolynomialGF2(13);
 
+        System.out.println(base.times(base2).hashCode());
 
         /// beim testen ist nets sinnvolles rausgekommen, mod funktioniert net wie gedacht ):
 
