@@ -1,5 +1,6 @@
-package app.exercise.testing;
-import app.exercise.algebra.Rational;
+package uebung02.src.tests;
+
+import uebung02.src.algebra.Rational;
 
 import java.util.EmptyStackException;
 import java.util.Stack;
@@ -7,7 +8,7 @@ import java.util.Stack;
 /**
 RPN = Reverse Polish Notation
 @link {https://en.wikipedia.org/wiki/Reverse_Polish_notation}
-test class for @see BasisFraction
+test class for @see uebung02.src.algebra_unbuilt.BasisFraction
 uses
  */
 

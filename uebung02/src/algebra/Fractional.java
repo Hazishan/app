@@ -1,4 +1,4 @@
-package app.exercise.algebra;
+package uebung02.src.algebra;
 
 public interface Fractional {
     // get numerator

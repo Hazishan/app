@@ -1,4 +1,4 @@
-package app.exercise.algebra;
+package uebung02.src.algebra;
 
 import java.util.Objects;
 
@@ -57,7 +57,7 @@ public class Rational extends BasisFraction {
 
     /**
     uses euclidean algorithm to get gcd
-    {@en.wikipedia.org/wiki/Euclidean_algorithm}
+    {@link{en.wikipedia.org/wiki/Euclidean_algorithm}
      */
     private long gcd(long num1, long num2) {
         while (num2 != 0) {

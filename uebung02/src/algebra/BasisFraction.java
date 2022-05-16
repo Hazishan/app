@@ -1,4 +1,6 @@
-package app.exercise.algebra;
+package uebung02.src.algebra;
+
+import uebung02.src.algebra.Fractional;
 
 public abstract class BasisFraction implements Fractional {
 
@@ -8,7 +10,7 @@ public abstract class BasisFraction implements Fractional {
 
 
     /**
-    Adds two Fractional values --> pattern:
+    Adds two uebung02.src.algebra_unbuilt.Fractional values --> pattern:
     pattern: a/b + c/d = a*d+b*c / b*d
     @param Fractional object
      */
@@ -17,7 +19,7 @@ public abstract class BasisFraction implements Fractional {
                 this.getD()*operand.getD());
     }
     /**
-    Subtracts two Fractional values --> pattern:
+    Subtracts two uebung02.src.algebra_unbuilt.Fractional values --> pattern:
     uses @see negation and @see add
     @param Fractional object
      */
