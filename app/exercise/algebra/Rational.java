@@ -1,14 +1,22 @@
-package uebung02.algebra;
+package app.exercise.algebra;
 
 import java.util.Objects;
 
-public class Rational extends BasisFraction{
+public class Rational extends BasisFraction {
 
     private long num;
     private long denom;
 
+    /** Standard Constructor
+     */
     public Rational(){};
 
+    /**
+    /// parameterized Constructor
+    needs @param numerator and @denominator
+    calculates the Greates common Divider --> @see gcd
+    also sets format of Rational object
+     */
     public Rational(long numerator, long denominator){
         long gcdDivider = gcd(numerator, denominator);
         num = numerator / gcdDivider;
@@ -20,6 +28,9 @@ public class Rational extends BasisFraction{
     }
 
     @Override
+    /**
+    @see Rational
+     */
     protected void setND(long numerator, long denominator) {
         long gcdDivider = gcd(numerator, denominator);
         num = numerator / gcdDivider;
@@ -29,18 +40,25 @@ public class Rational extends BasisFraction{
             denom = -denom;
         }
     }
-
+    /**
+    @return numerator
+    */
     @Override
     public long getN() {
         return num;
     }
-
+    /**
+        @return Denominator
+    */
     @Override
     public long getD() {
         return denom;
     }
 
-    /// euclidean algorithm
+    /**
+    uses euclidean algorithm to get gcd
+    {@en.wikipedia.org/wiki/Euclidean_algorithm}
+     */
     private long gcd(long num1, long num2) {
         while (num2 != 0) {
             long temp = num2;
@@ -50,26 +68,39 @@ public class Rational extends BasisFraction{
         return num1;
     }
 
+    /**
+    @return String
+     */
     @Override
     public String toString() {
         return getN()+"/"+getD();
     }
-
+    /**
+    creates new Rational Object
+    new Rational Object is "turned around"
+     */
     @Override
     public Fractional reciprocal() {
         return new Rational(denom, num);
     }
-
+    /**
+    creates new Rational Object
+    new Rational Object is negated
+     */
     @Override
     public Fractional negation() {
         return new Rational(-num,denom);
     }
-
+    /**
+    clones Rational Object
+     */
     @Override
     public Rational clone(){
         return new Rational(num,denom);
     }
-
+    /**
+    Tests object on equality
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

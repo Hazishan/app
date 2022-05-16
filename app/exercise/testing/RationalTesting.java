@@ -1,7 +1,7 @@
-package uebung02.algebra.testing;
+package app.exercise.testing;
 
-import uebung02.algebra.Fractional;
-import uebung02.algebra.Rational;
+import app.exercise.algebra.Fractional;
+import app.exercise.algebra.Rational;
 
 public class RationalTesting {
     public static void main(String[] args) {
