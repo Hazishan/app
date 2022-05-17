@@ -38,7 +38,6 @@ public abstract class BasisFraction implements Fractional {
     public void mul(Fractional operand) {
         setND(this.getN()* operand.getN(),this.getD()*operand.getD());
     }
-
     /**
     Divides two Fractions
     uses @see reciprocal and @see mul
