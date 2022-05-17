@@ -1,6 +1,4 @@
-package uebung02.src.algebra;
-
-import uebung02.src.algebra.Fractional;
+package app.exercise.algebra;
 
 public abstract class BasisFraction implements Fractional {
 
