@@ -12,7 +12,6 @@ public abstract class BasisFraction implements Fractional {
     protected abstract void setND(long numerator, long denominator);
 
 
-
     /**
     Adds two uebung02.src.algebra_unbuilt.Fractional values --> pattern:
     pattern: a/b + c/d = a*d+b*c / b*d
