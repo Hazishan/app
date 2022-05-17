@@ -5,6 +5,7 @@ import src.exercise.app.algebra.Rational;
 
 public class RationalTesting {
     public static void main(String[] args) {
+
         Rational one = new Rational(5,1);
         Rational two = new Rational(2,1);
 
@@ -33,7 +34,7 @@ public class RationalTesting {
         System.out.println("four (equal to one) reciproced: " + four.toString());
 
         Rational five = one.clone();
-        System.out.println("one == one.clone()? "+ five.equals(one));
+        System.out.println("one == one.clone()?: "+ five.equals(one));
         System.out.println("hash(one): "+ one.hashCode());
         System.out.println("hash(one.clone(): "+ five.hashCode());
 

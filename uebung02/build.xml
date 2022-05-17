@@ -1,4 +1,4 @@
-<project name="uebung_02" default="javadocs" basedir=".">
+<project name="uebung_02" default="run" basedir=".">
 
     <property name="build" location="bin"/>
     <property name="javadocs.target" location="javadocs"/>
@@ -33,7 +33,10 @@
         <javadoc sourcepath="." destdir="javadocs"  private="true" />
     </target>
 
-
+<target name="run" depends="javadocs">
+    <java classpath="bin/" classname="src.exercise.app.tests.RPN" args="58*"/>
+    <java classpath="bin/" classname="src.exercise.app.tests.RationalTesting" args="1234"/>
+</target>
 
 
 

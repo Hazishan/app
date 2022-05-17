@@ -2,6 +2,7 @@ package src.exercise.app.tests;
 
 import src.exercise.app.algebra.Rational;
 
+import java.util.Arrays;
 import java.util.EmptyStackException;
 import java.util.Stack;
 
@@ -14,7 +15,7 @@ uses
 
 public class RPN {
     public static void main(String[] args) {
-        String rpnString = "12*4/5+45+-";
+        String rpnString = String.join("",args);
         Stack<Rational> numbers = new Stack();
 
 
@@ -41,7 +42,7 @@ public class RPN {
                 }
             }
         }
-        System.out.println("solution: " + numbers.pop());
+        System.out.println("solution of " + rpnString +" = " + numbers.pop());
     }
 }
 
