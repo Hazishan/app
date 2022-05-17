@@ -3,6 +3,11 @@ package src.exercise.app.tests;
 import src.exercise.app.algebra.Fractional;
 import src.exercise.app.algebra.Rational;
 
+
+/**
+ * test class {@link Rational} class on every method
+ * set Rationals in class
+ */
 public class RationalTesting {
     public static void main(String[] args) {
 

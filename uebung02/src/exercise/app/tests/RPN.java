@@ -8,9 +8,10 @@ import java.util.Stack;
 
 /**
 RPN = Reverse Polish Notation
-@link {https://en.wikipedia.org/wiki/Reverse_Polish_notation}
-test class for @see uebung02.src.algebra_unbuilt.BasisFraction
-uses
+ {@link <a href="https://en.wikipedia.org/wiki/Reverse_Polish_notation">RPN</a> }
+test class
+ {@link Rational }
+
  */
 
 public class RPN {
@@ -23,6 +24,8 @@ public class RPN {
             if (rpnString.charAt(i) != '+' && rpnString.charAt(i) != '-' && rpnString.charAt(i) != '*' && rpnString.charAt(i) != '/') {
                 long currentVal = Character.getNumericValue(rpnString.charAt(i));
                 numbers.push(new Rational(currentVal, 1));
+
+
             } else{
                 try {
                     Rational operantOne = numbers.pop();

@@ -1,5 +1,11 @@
 package src.exercise.app.algebra;
 
+/**
+ * Implements Fractional, abstract class
+ * @see Rational for extention
+ */
+
+
 public abstract class BasisFraction implements Fractional {
 
     /// sets numerator and dominator: n/d
@@ -10,7 +16,6 @@ public abstract class BasisFraction implements Fractional {
     /**
     Adds two uebung02.src.algebra_unbuilt.Fractional values --> pattern:
     pattern: a/b + c/d = a*d+b*c / b*d
-    @param Fractional object
      */
     public void add(Fractional operand) {
         setND(this.getN()* operand.getD()+ operand.getN()*this.getD(),

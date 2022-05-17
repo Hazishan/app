@@ -2,10 +2,9 @@
 
     <property name="build" location="bin"/>
     <property name="javadocs.target" location="javadocs"/>
-    <property name="tests.target" location="bin"/>
     <property name="algebra.src" location="src/exercise/app/algebra"/>
-    <property name="algebra.target" location="/bin"/>
     <property name="test.src" location="src/exercise/app/tests"/>
+    <property name="input" value="45*"/>
 
     <target name="delete">
         <delete dir="${build}"/>
@@ -16,26 +15,27 @@
 
 
     <target name="create" depends="delete">
-        <mkdir dir="${algebra.target}"/>
-        <mkdir dir="${tests.target}"/>
+        <mkdir dir="${build}"/>
         <mkdir dir="${javadocs.target}"/>
         <echo message="new dir created!"/>
     </target>
 
 
     <target name="compile" depends="create">
-        <javac srcdir="src/exercise/app/algebra" destdir="bin" includeantruntime="false"/>
-        <javac srcdir="src/exercise/app/tests" destdir="bin" includeantruntime="false"/>
+        <javac srcdir="${algebra.src}" destdir="${build}" includeantruntime="false"/>
+        <javac srcdir="${test.src}" destdir="${build}" includeantruntime="false"/>
         <echo message=".javas compiled!"/>
     </target>
 
     <target name="javadocs" depends="compile">
-        <javadoc sourcepath="." destdir="javadocs"  private="true" />
+        <javadoc sourcepath="." destdir="${javadocs.target}"  private="true" />
     </target>
 
 <target name="run" depends="javadocs">
-    <java classpath="bin/" classname="src.exercise.app.tests.RPN" args="58*"/>
-    <java classpath="bin/" classname="src.exercise.app.tests.RationalTesting" args="1234"/>
+    <echo message="Test 1, input: ${input}"/>
+    <java classpath="${build}" classname="src.exercise.app.tests.RPN" args="${input}"/>
+    <echo message="Test 2, input edit in .java pls ):"/>
+    <java classpath="${build}" classname="src.exercise.app.tests.RationalTesting" />
 </target>
 
 

@@ -2,9 +2,21 @@ package src.exercise.app.algebra;
 
 import java.util.Objects;
 
+/**
+ * Extends
+ * {@link BasisFraction}
+ *
+ */
+
 public class Rational extends BasisFraction {
 
+    /**
+     * nummerator
+     */
     private long num;
+    /**
+     * denominator
+     */
     private long denom;
 
     /** Standard Constructor
@@ -13,8 +25,10 @@ public class Rational extends BasisFraction {
 
     /**
     /// parameterized Constructor
-    needs @param numerator and @denominator
-    calculates the Greates common Divider --> @see gcd
+    needs
+     {@link num} and
+     {@link denom} to
+    calculates the Greates common Divider --> {@link gcd}
     also sets format of Rational object
      */
     public Rational(long numerator, long denominator){
@@ -57,7 +71,7 @@ public class Rational extends BasisFraction {
 
     /**
     uses euclidean algorithm to get gcd
-    {@link{en.wikipedia.org/wiki/Euclidean_algorithm}
+    {@link <a href="https://en.wikipedia.org/wiki/Euclidean_algorithm">Euclidean algorithm</a>}
      */
     private long gcd(long num1, long num2) {
         while (num2 != 0) {
