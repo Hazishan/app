@@ -1,7 +1,7 @@
-package app.exercise.tests;
+package src.exercise.app.tests;
 
-import app.exercise.algebra.Fractional;
-import app.exercise.algebra.Rational;
+import src.exercise.app.algebra.Fractional;
+import src.exercise.app.algebra.Rational;
 
 public class RationalTesting {
     public static void main(String[] args) {

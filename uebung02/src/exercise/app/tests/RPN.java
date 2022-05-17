@@ -1,6 +1,6 @@
-package app.exercise.tests;
+package src.exercise.app.tests;
 
-import app.exercise.algebra.Rational;
+import src.exercise.app.algebra.Rational;
 
 import java.util.EmptyStackException;
 import java.util.Stack;

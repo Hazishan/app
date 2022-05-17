@@ -1,0 +1,39 @@
+<project name="uebung_02" default="javadocs" basedir=".">
+
+    <property name="build" location="bin"/>
+    <property name="javadocs.target" location="javadocs"/>
+    <property name="tests.target" location="bin"/>
+    <property name="algebra.src" location="src/exercise/app/algebra"/>
+    <property name="algebra.target" location="/bin"/>
+    <property name="test.src" location="src/exercise/app/tests"/>
+
+    <target name="delete">
+        <delete dir="${build}"/>
+        <delete dir="${javadocs.target}"/>
+        <echo message="old files deleted!"/>
+    </target>
+
+
+    <target name="create" depends="delete">
+        <mkdir dir="${algebra.target}"/>
+        <mkdir dir="${tests.target}"/>
+        <mkdir dir="${javadocs.target}"/>
+        <echo message="new dir created!"/>
+    </target>
+
+
+    <target name="compile" depends="create">
+        <javac srcdir="${algebra.src}" destdir="${algebra.target}" includeantruntime="false"/>
+        <javac srcdir="${test.src}" destdir="${tests.target}" includeantruntime="false"/>
+        <echo message=".javas compiled!"/>
+    </target>
+
+    <target name="javadocs" depends="compile">
+        <javadoc sourcepath="uebung02.src.exercise.app/exercise/algebra" destdir="uebung02/javadocs"  access="private" />
+    </target>
+
+
+
+
+
+</project>
