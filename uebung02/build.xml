@@ -23,13 +23,13 @@
 
 
     <target name="compile" depends="create">
-        <javac srcdir="${algebra.src}" destdir="${algebra.target}" includeantruntime="false"/>
-        <javac srcdir="${test.src}" destdir="${tests.target}" includeantruntime="false"/>
+        <javac srcdir="src/exercise/app/algebra" destdir="bin" includeantruntime="false"/>
+        <javac srcdir="src/exercise/app/tests" destdir="bin" includeantruntime="false"/>
         <echo message=".javas compiled!"/>
     </target>
 
     <target name="javadocs" depends="compile">
-        <javadoc sourcepath="uebung02.src.exercise.app/exercise/algebra" destdir="uebung02/javadocs"  access="private" />
+        <javadoc sourcepath="." destdir="javadocs"  private="true" />
     </target>
 
 
