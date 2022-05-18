@@ -36,7 +36,6 @@ public class RPN {
             if (currentString.matches("^[0-9]*[1-9][0-9]*$")) {
                 long currentVal = Integer.parseInt(currentString);
                 numbers.push(new Rational(currentVal, 1));
-
             }
             else if(currentString.matches("^[\\*,\\+,\\-,\\/]{1}$")){
                 Rational operantOne = numbers.pop();
