@@ -37,7 +37,6 @@ public class RPN {
                 long currentVal = Integer.parseInt(currentString);
                 numbers.push(new Rational(currentVal, 1));
 
-
             }
             else if(currentString.matches("^[\\*,\\+,\\-,\\/]{1}$")){
                 Rational operantOne = numbers.pop();
