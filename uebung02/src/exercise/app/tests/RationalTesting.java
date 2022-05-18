@@ -11,8 +11,8 @@ import src.exercise.app.algebra.Rational;
 public class RationalTesting {
     public static void main(String[] args) {
 
-        Rational one = new Rational(5,1);
-        Rational two = new Rational(2,1);
+        Rational one = new Rational(5,6);
+        Rational two = new Rational(1,5);
 
 
         System.out.print(one.toString()+" + " +two.toString()+ " = ");

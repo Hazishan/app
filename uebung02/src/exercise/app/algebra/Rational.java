@@ -81,6 +81,7 @@ public class Rational extends BasisFraction {
      */
     @Override
     public String toString() {
+        if(getD()==1){return Integer.toString((int) getN());}
         return getN()+"/"+getD();
     }
     /**
