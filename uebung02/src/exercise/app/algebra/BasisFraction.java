@@ -23,7 +23,6 @@ public abstract class BasisFraction implements Fractional {
     /**
     Subtracts two uebung02.src.algebra_unbuilt.Fractional values --> pattern:
     uses @see negation and @see add
-    @param Fractional object
      */
     @Override
     public void sub(Fractional operand) {

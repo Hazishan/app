@@ -4,7 +4,7 @@
     <property name="javadocs.target" location="javadocs"/>
     <property name="algebra.src" location="src/exercise/app/algebra"/>
     <property name="test.src" location="src/exercise/app/tests"/>
-    <property name="input" value="45*"/>
+    <property name="input" value="12+"/>
 
     <target name="delete">
         <delete dir="${build}"/>

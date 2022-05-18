@@ -32,13 +32,7 @@ public class Rational extends BasisFraction {
     also sets format of Rational object
      */
     public Rational(long numerator, long denominator){
-        long gcdDivider = gcd(numerator, denominator);
-        num = numerator / gcdDivider;
-        denom = denominator / gcdDivider;
-        if (num < 0) {
-            num = num * -1;
-            denom = -denom;
-        }
+        setND(numerator, denominator);
     }
 
     @Override
