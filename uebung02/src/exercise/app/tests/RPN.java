@@ -15,37 +15,46 @@ test class
  */
 
 public class RPN {
-    public static void main(String[] args) {
-        String rpnString = String.join("",args);
+    public static void main(String[] args) throws Exception {
         Stack<Rational> numbers = new Stack();
 
+        /// Check if RPN task makes sense, if ratio of integers to operands is invalid, throws Exception
+        int intcounter=0;
+        int operatorcounter=0;
+        for(int i =0;i<args.length;i++){
+            if(args[i].matches("^[0-9]*[1-9][0-9]*$")){intcounter++;}
+            if(args[i].matches("^[\\*,\\+,\\-,\\/]{1}$")){operatorcounter++;}
+        }
+        if(!(intcounter-1==operatorcounter)){
+            throw new Exception("ERROR: Invalid amount of operators/operands");
+        }
 
-        for (int i = 0; i <= rpnString.length() - 1; i++) {
-            if (rpnString.charAt(i) != '+' && rpnString.charAt(i) != '-' && rpnString.charAt(i) != '*' && rpnString.charAt(i) != '/') {
-                long currentVal = Character.getNumericValue(rpnString.charAt(i));
+        ///adds integers to stack, if operant is given: popsx2 calculates and push solution
+
+        for (int i = 0; i <= args.length - 1; i++) {
+            String currentString = args[i];
+            if (currentString.matches("^[0-9]*[1-9][0-9]*$")) {
+                long currentVal = Integer.parseInt(currentString);
                 numbers.push(new Rational(currentVal, 1));
 
 
-            } else{
-                try {
-                    Rational operantOne = numbers.pop();
-                    Rational operantTwo = numbers.pop();
-                    char operator = rpnString.charAt(i);
-                    switch (operator) {
-                        case '+' -> operantTwo.add(operantOne);
-                        case '-' -> operantTwo.sub(operantOne);
-                        case '*' -> operantTwo.mul(operantOne);
-                        case '/' -> operantTwo.div(operantOne);
-                    }
-                    numbers.push(operantTwo);
-                } catch (EmptyStackException e) {
-                    System.out.println("ERROR: Invalid amount of operators/operands");
-                    System.out.println(e.getClass());
-                    break;
+            }
+            else if(currentString.matches("^[\\*,\\+,\\-,\\/]{1}$")){
+                Rational operantOne = numbers.pop();
+                Rational operantTwo = numbers.pop();
+                switch (currentString) {
+                    case "+" -> operantTwo.add(operantOne);
+                    case "-" -> operantTwo.sub(operantOne);
+                    case "*" -> operantTwo.mul(operantOne);
+                    case "/" -> operantTwo.div(operantOne);
                 }
+                numbers.push(operantTwo);
+            }
+            else{
+                System.out.println("Invalid input: " + currentString + " Skipping to next...");
             }
         }
-        System.out.println("solution of " + rpnString +" = " + numbers.pop());
+        System.out.println("solution of " + String.join(" ", args) +" = " + numbers.pop());
     }
 }
 
