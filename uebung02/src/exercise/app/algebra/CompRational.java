@@ -2,7 +2,7 @@ package src.exercise.app.algebra;
 
 import src.exercise.app.algebra.Rational;
 
-public class CompRational<T> extends Rational implements java.lang.Comparable<T> {
+public class CompRational<T> extends Rational implements Comparable<T> {
     /***
      *
      * @param num

@@ -1,15 +1,59 @@
 package src.exercise.adt;
 
+import src.exercise.app.algebra.CompRational;
+import src.exercise.visualtree.Node;
+
 import java.util.*;
 import java.util.Collection;
 
 public class BSTree<T extends Comparable<T>> extends AbstractCollection<T>{
     private T[] arrayList;
     private int currentSize;
+    private Node<T> root;
 
-    public BSTree(T[] array){
-        arrayList = array;
-        currentSize = array.length;
+    /// TODO constructor
+    public BSTree(){
+    }
+
+
+    @Override
+    public boolean add(T t) {
+
+
+        /***
+         * no root set
+         */
+        Node<T> toAddingNode = new Node<T>(t);
+        if(root == null) {
+            root = toAddingNode;
+            return true;
+        }
+
+        else{
+            Node<T> currentNode = root;
+            while(true){
+                if(currentNode.getRight()==null && currentNode.getValue().compareTo(t)>0){
+                    currentSize++;
+                    toAddingNode.setRoot(currentNode);
+                    currentNode.setRight(toAddingNode);
+                    return true;
+                }
+                if(currentNode.getLeft()==null && currentNode.getValue().compareTo(t)<0){
+                    currentSize++;
+                    toAddingNode.setRoot(currentNode);
+                    currentNode.setLeft(toAddingNode);
+                    return true;
+                }
+                if(currentNode.getRight().getValue().compareTo(toAddingNode.getValue())>0){
+                    currentNode = (Node<T>) currentNode.getRight();
+                }
+                if(currentNode.getLeft().getValue().compareTo(toAddingNode.getValue())<0){
+                    currentNode = (Node<T>) currentNode.getLeft();
+                }
+            }
+
+        }
+
     }
 
 
@@ -18,49 +62,46 @@ public class BSTree<T extends Comparable<T>> extends AbstractCollection<T>{
         return new BSTreeIterator<T>(arrayList);
     }
 
+    /// TODO size
     @Override
     public int size() {
         return currentSize;
-    }
 
+    }
+/**
+
+    /// TODO isEmpty
     @Override
     public boolean isEmpty(){
-        if(size()==0){return true;}
-        /***
-         * dangerouse but only used internally to compare array with empty array
-         */
-        T[] emptyArray = (T[])new Object[size()];
-        return Arrays.equals(arrayList, emptyArray);
+        return root==null;
+
     }
 
+
+    /// TODO contains
     @Override
     public boolean contains(Object o){
-        for (T t : this) {
-            if (o.equals(t)) {
-                return true;
-            }
-        }
-        return false;
+
     }
 
+    /// TODO containsAll
     @Override
     public boolean containsAll(Collection<?> c){
 
-        for(){
-            if(!contains(t)){return false;}
-        }
-        return false;
-
     }
 
+
+    /// TODO toArray
     @Override
     public Object[] toArray(){
         return arrayList;
     }
 
+    /// TODO toString
     @Override
     public String toString(){
-        return Arrays.toString(arrayList);
+
     }
+    **/
 
 }
