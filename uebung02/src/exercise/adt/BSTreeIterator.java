@@ -29,6 +29,12 @@ public class BSTreeIterator<T>  implements Iterator<T> {
         return p.getValue();
     }
 
+    public Node<T> nextNode() {
+        Node<T> p = treestack.pop();
+        stackFiller((Node<T>) p.getRight());
+        return p;
+    }
+
     private void stackFiller(Node<T> currentNode){
         while(currentNode!= null){
             treestack.push(currentNode);

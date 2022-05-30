@@ -5,7 +5,6 @@ import src.exercise.visualtree.Node;
 import java.util.*;
 
 public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollection<T>{
-    private T[] arrayList;
     private int currentSize;
     private Node<T> root=null;
 
@@ -69,7 +68,7 @@ public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollectio
         return new BSTreeIterator<>(root);
     }
 
-    /// TODO size
+
     @Override
     public int size() {
         return currentSize;
@@ -77,37 +76,65 @@ public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollectio
     }
 
 
-    /// TODO isEmpty
+
     @Override
     public boolean isEmpty(){
         return currentSize==0;
 
     }
-/**
-    /// TODO contains
+
+    /// TODO check T
     @Override
     public boolean contains(Object o){
-
+        if(!(o instanceof T)){
+            return false;
+        }
+        for (T t : this) {
+            if (t.equals(o)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /// TODO containsAll
     @Override
     public boolean containsAll(Collection<?> c){
-
+        for(Object t:c){
+            if(!contains(t)){
+                return false;
+            }
+        }
+        return true;
     }
 
 
     /// TODO toArray
     @Override
     public Object[] toArray(){
+        Iterator<T> iter= this.iterator();
+        Object[] arrayList = new Object[size()-1];
+        int i = 0;
+        while(iter.hasNext()){
+            arrayList[i] =  iter.next();
+            i++;
+        }
         return arrayList;
     }
 
-    /// TODO toString
-    @Override
-    public String toString(){
-
+    /// TODO remove
+    public boolean remove(Object o){
     }
-    **/
 
+
+    @Override
+    public String toString() {
+        String output = "";
+
+        for (T t : this) {
+            output += t;
+
+        }
+        return output;
+    }
 }
