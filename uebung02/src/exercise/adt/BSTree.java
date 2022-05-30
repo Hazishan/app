@@ -1,56 +1,63 @@
 package src.exercise.adt;
 
-import src.exercise.app.algebra.CompRational;
 import src.exercise.visualtree.Node;
 
 import java.util.*;
-import java.util.Collection;
 
-public class BSTree<T extends Comparable<T>> extends AbstractCollection<T>{
+public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollection<T>{
     private T[] arrayList;
     private int currentSize;
-    private Node<T> root;
+    private Node<T> root=null;
+
+
+    public BSTree(){}
 
     /// TODO constructor
-    public BSTree(){
+    public BSTree(Node<T> rootNode){
+        root = rootNode;
     }
 
 
     @Override
-    public boolean add(T t) {
+    public boolean add(T nodeValue) {
 
+        Node<T> nodeToAdd = new Node<T>(nodeValue);
 
-        /***
-         * no root set
-         */
-        Node<T> toAddingNode = new Node<T>(t);
         if(root == null) {
-            root = toAddingNode;
+            currentSize++;
+            root = nodeToAdd;
             return true;
         }
 
         else{
             Node<T> currentNode = root;
-            while(true){
-                if(currentNode.getRight()==null && currentNode.getValue().compareTo(t)>0){
-                    currentSize++;
-                    toAddingNode.setRoot(currentNode);
-                    currentNode.setRight(toAddingNode);
-                    return true;
-                }
-                if(currentNode.getLeft()==null && currentNode.getValue().compareTo(t)<0){
-                    currentSize++;
-                    toAddingNode.setRoot(currentNode);
-                    currentNode.setLeft(toAddingNode);
-                    return true;
-                }
-                if(currentNode.getRight().getValue().compareTo(toAddingNode.getValue())>0){
-                    currentNode = (Node<T>) currentNode.getRight();
-                }
-                if(currentNode.getLeft().getValue().compareTo(toAddingNode.getValue())<0){
+
+            /**
+             * search for bottom leaf
+             */
+            while(!currentNode.hasChild()){
+
+                if(currentNode.hasLeft() && currentNode.getValue().compareTo(nodeValue)>0){
                     currentNode = (Node<T>) currentNode.getLeft();
                 }
+                else if (currentNode.hasRight() && currentNode.getValue().compareTo(nodeValue)<0){
+                    currentNode = (Node<T>) currentNode.getRight();
+                }
+                else{
+                    break;
+                }
             }
+
+            if(currentNode.getValue().compareTo(nodeValue)>0){
+                currentNode.setLeft(nodeToAdd);
+
+            }
+            else{
+                currentNode.setRight(nodeToAdd);
+            }
+            nodeToAdd.setRoot(currentNode);
+            currentSize++;
+            return true;
 
         }
 
@@ -59,7 +66,7 @@ public class BSTree<T extends Comparable<T>> extends AbstractCollection<T>{
 
     @Override
     public Iterator<T> iterator() {
-        return new BSTreeIterator<T>(arrayList);
+        return new BSTreeIterator<>(root);
     }
 
     /// TODO size
@@ -68,15 +75,15 @@ public class BSTree<T extends Comparable<T>> extends AbstractCollection<T>{
         return currentSize;
 
     }
-/**
+
 
     /// TODO isEmpty
     @Override
     public boolean isEmpty(){
-        return root==null;
+        return currentSize==0;
 
     }
-
+/**
 
     /// TODO contains
     @Override

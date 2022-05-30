@@ -2,7 +2,7 @@ package src.exercise.app.algebra;
 
 import src.exercise.app.algebra.Rational;
 
-public class CompRational<T> extends Rational implements Comparable<T> {
+public class CompRational extends Rational implements Comparable<CompRational> {
     /***
      *
      * @param num
@@ -12,13 +12,14 @@ public class CompRational<T> extends Rational implements Comparable<T> {
         super(num, denum);
     }
 
+
     /***
      *
      * @param o object of any Type
      * @return =0 means same, -1 = smaller, 1 = larger
      */
     @Override
-    public int compareTo(T o) {
+    public int compareTo(CompRational o) {
         try {
             if (o instanceof Rational) {
                 /***

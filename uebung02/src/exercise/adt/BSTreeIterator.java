@@ -1,26 +1,39 @@
 package src.exercise.adt;
 
+import src.exercise.visualtree.Node;
+
 import java.util.Iterator;
+import java.util.Stack;
 import java.util.function.Consumer;
 
 public class BSTreeIterator<T>  implements Iterator<T> {
-    private T[] arrayList;
+    private Stack<Node<T>> treestack = new Stack<Node<T>>();
     private int currentSize;
-    private int currentIndex=0;
+    private Node<T> currentNode;
+    private Node<T> root;
 
-    public BSTreeIterator(T[] arr){
-        arrayList = arr;
-        currentSize = arr.length;
+    public BSTreeIterator(Node<T> root){
+        this.root = root;
+        stackFiller(root);
     }
 
     @Override
     public boolean hasNext() {
-        return currentIndex<currentSize&&arrayList[currentIndex++]!=null;
+        return !treestack.isEmpty();
     }
 
     @Override
     public T next() {
-        return arrayList[currentIndex++];
+        Node<T> p = treestack.pop();
+        stackFiller((Node<T>) p.getRight());
+        return p.getValue();
+    }
+
+    private void stackFiller(Node<T> currentNode){
+        while(currentNode!= null){
+            treestack.push(currentNode);
+            currentNode= (Node<T>) currentNode.getLeft();
+        }
     }
 
     @Override
