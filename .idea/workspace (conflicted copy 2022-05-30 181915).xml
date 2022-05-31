@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c941de8a-76ad-4832-9c95-ffa452ec87ca" name="Default Changelist" comment="contains etc.">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ant.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace (conflicted copy 2022-05-25 142234).xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_appss22.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/.idea/ant.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/.idea/workspace (conflicted copy 2022-05-25 142234).xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/allclasses-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/allpackages-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/constant-values.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/deprecated-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/element-list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/help-doc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/index-all.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/jquery-ui.overrides.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/member-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/module-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/overview-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/overview-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/package-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/resources/glass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/resources/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/script-dir/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/script-dir/images/ui-bg_glass_65_dadada_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/script-dir/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/script-dir/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/script-dir/images/ui-bg_glass_95_fef1ec_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/script-dir/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/script-dir/images/ui-icons_222222_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/script-dir/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/script-dir/images/ui-icons_454545_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/script-dir/images/ui-icons_888888_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/script-dir/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/script-dir/jquery-3.5.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/script-dir/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/script-dir/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/script-dir/jquery-ui.structure.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/src/exercise/app/algebra/BasisFraction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/src/exercise/app/algebra/Fractional.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/src/exercise/app/algebra/Rational.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/src/exercise/app/algebra/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/src/exercise/app/algebra/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/src/exercise/app/tests/RPN.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/src/exercise/app/tests/RationalTesting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/src/exercise/app/tests/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/src/exercise/app/tests/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/tag-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/javadocs/type-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/my_appss22.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/src/exercise/adt/BSTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/src/exercise/adt/BSTreeIterator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/src/exercise/app/algebra/BasisFraction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/src/exercise/app/algebra/CompRational.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/src/exercise/app/algebra/Fractional.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/src/exercise/app/algebra/Rational.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/src/exercise/app/tests/RPN.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/src/exercise/app/tests/RationalTesting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/src/exercise/app/tests/treetester.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/src/exercise/visualtree/DrawableTreeElement.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/src/exercise/visualtree/Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung01/PolynomialGF2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/allclasses-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/allpackages-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/constant-values.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/deprecated-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/element-list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/help-doc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/index-all.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/jquery-ui.overrides.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/member-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/module-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/overview-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/overview-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/package-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/resources/glass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/resources/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/script-dir/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/script-dir/images/ui-bg_glass_65_dadada_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/script-dir/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/script-dir/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/script-dir/images/ui-bg_glass_95_fef1ec_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/script-dir/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/script-dir/images/ui-icons_222222_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/script-dir/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/script-dir/images/ui-icons_454545_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/script-dir/images/ui-icons_888888_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/script-dir/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/script-dir/jquery-3.5.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/script-dir/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/script-dir/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/script-dir/jquery-ui.structure.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/src/exercise/app/algebra/BasisFraction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/src/exercise/app/algebra/Fractional.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/src/exercise/app/algebra/Rational.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/src/exercise/app/algebra/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/src/exercise/app/algebra/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/src/exercise/app/tests/RPN.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/src/exercise/app/tests/RationalTesting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/src/exercise/app/tests/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/src/exercise/app/tests/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/tag-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/my_appss22/uebung02/javadocs/type-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/bin/src/exercise/app/algebra/BasisFraction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/bin/src/exercise/app/algebra/Fractional.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/bin/src/exercise/app/algebra/Rational.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/bin/src/exercise/app/tests/RPN.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/bin/src/exercise/app/tests/RationalTesting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/allclasses-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/allpackages-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/constant-values.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/deprecated-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/element-list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/help-doc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/index-all.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/jquery-ui.overrides.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/member-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/module-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/overview-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/overview-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/package-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/resources/glass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/resources/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/script-dir/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/script-dir/images/ui-bg_glass_65_dadada_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/script-dir/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/script-dir/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/script-dir/images/ui-bg_glass_95_fef1ec_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/script-dir/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/script-dir/images/ui-icons_222222_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/script-dir/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/script-dir/images/ui-icons_454545_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/script-dir/images/ui-icons_888888_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/script-dir/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/script-dir/jquery-3.5.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/script-dir/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/script-dir/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/script-dir/jquery-ui.structure.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/src/exercise/app/algebra/BasisFraction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/src/exercise/app/algebra/Fractional.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/src/exercise/app/algebra/Rational.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/src/exercise/app/algebra/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/src/exercise/app/algebra/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/src/exercise/app/tests/RPN.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/src/exercise/app/tests/RationalTesting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/src/exercise/app/tests/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/src/exercise/app/tests/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/tag-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uebung02/javadocs/type-search-index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="29IK8fETke7PLbWzOYAUfzN0j7X" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/uebung02/src/exercise/app/algebra" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="vcs.Subversion.SSH" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lasse\Nextcloud\UNI\6 Semester\Programmierpraktikum\my_appss22\uebung02\src\exercise\app\algebra" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lasse\Nextcloud\UNI\6 Semester\Programmierpraktikum\my_appss22\uebung02" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.treetester">
+    <configuration name="RPN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.exercise.app.tests.RPN" />
+      <module name="my_appss22" />
+      <option name="PROGRAM_PARAMETERS" value="2147483647 1 + " />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.exercise.app.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testoo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.exercise.app.algebra.testoo" />
+      <module name="my_appss22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.exercise.visualtree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="treetester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.exercise.app.tests.treetester" />
+      <module name="my_appss22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.exercise.app.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.treetester" />
+        <item itemvalue="Java Scratch.Scratch" />
+        <item itemvalue="Application.testoo" />
+        <item itemvalue="Application.RPN" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Lasse\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c941de8a-76ad-4832-9c95-ffa452ec87ca" name="Default Changelist" comment="" />
+      <created>1652795001841</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652795001841</updated>
+      <workItem from="1652795004182" duration="7819000" />
+      <workItem from="1652870233452" duration="9212000" />
+      <workItem from="1652887173190" duration="494000" />
+      <workItem from="1653049788479" duration="2339000" />
+      <workItem from="1653139968257" duration="341000" />
+      <workItem from="1653225927998" duration="1942000" />
+      <workItem from="1653317007069" duration="17071000" />
+      <workItem from="1653478306292" duration="10095000" />
+      <workItem from="1653564507879" duration="9049000" />
+      <workItem from="1653917313114" duration="10120000" />
+    </task>
+    <task id="LOCAL-00001" summary="dir structure">
+      <created>1652795374851</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652795374851</updated>
+    </task>
+    <task id="LOCAL-00002" summary="finished">
+      <created>1652796629199</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652796629199</updated>
+    </task>
+    <task id="LOCAL-00003" summary="finished">
+      <created>1652796740901</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652796740901</updated>
+    </task>
+    <task id="LOCAL-00004" summary="finished+">
+      <created>1652799386803</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652799386803</updated>
+    </task>
+    <task id="LOCAL-00005" summary="finished++">
+      <created>1652802055010</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652802055011</updated>
+    </task>
+    <task id="LOCAL-00006" summary="finished++">
+      <created>1652802079981</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1652802079981</updated>
+    </task>
+    <task id="LOCAL-00007" summary="finished++">
+      <created>1652802797023</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1652802797023</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fixed para Constructor">
+      <created>1652870405932</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1652870405932</updated>
+    </task>
+    <task id="LOCAL-00009" summary="reworked input of RPN, now all integers can be inputs not only single digits">
+      <created>1652885522718</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1652885522718</updated>
+    </task>
+    <task id="LOCAL-00010" summary="reworked input of RPN, now all integers can be inputs not only single digits">
+      <created>1652885542809</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1652885542809</updated>
+    </task>
+    <task id="LOCAL-00011" summary="toString correctly shows integers">
+      <created>1652886553421</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1652886553421</updated>
+    </task>
+    <task id="LOCAL-00012" summary="toString correctly shows integers">
+      <created>1652886602287</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1652886602287</updated>
+    </task>
+    <task id="LOCAL-00013" summary="uebung03">
+      <created>1653478350529</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1653478350530</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add should be finished?">
+      <created>1653503111816</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1653503111816</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Iterator and tree builder">
+      <created>1653924746385</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1653924746385</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Iterator and tree builder">
+      <created>1653924760699</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1653924760699</updated>
+    </task>
+    <task id="LOCAL-00017" summary="contains etc.">
+      <created>1653927308696</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1653927308696</updated>
+    </task>
+    <task id="LOCAL-00018" summary="contains etc.">
+      <created>1653927540844</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1653927540844</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="LONG_EDGES_VISIBLE" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="90" />
+                  <entry key="Table.Default.Hash.ColumnIdWidth" value="79" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dir structure" />
+    <MESSAGE value="finished" />
+    <MESSAGE value="finished+" />
+    <MESSAGE value="finished++" />
+    <MESSAGE value="fixed para Constructor" />
+    <MESSAGE value="reworked input of RPN, now all integers can be inputs not only single digits" />
+    <MESSAGE value="toString correctly shows integers" />
+    <MESSAGE value="uebung03" />
+    <MESSAGE value="add should be finished?" />
+    <MESSAGE value="Iterator and tree builder" />
+    <MESSAGE value="contains etc." />
+    <option name="LAST_COMMIT_MESSAGE" value="contains etc." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/uebung02/src/exercise/app/tests/RPN.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/uebung02/src/exercise/app/tests/treetester.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/uebung02/src/exercise/app/tests/RPN.java</url>
+          <line>17</line>
+          <properties class="src.exercise.app.tests.RPN" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
