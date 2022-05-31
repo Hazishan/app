@@ -19,6 +19,7 @@ public class treetester {
         myTree.add(five);
         myTree.add(six);
 
+
         CompRational oneCopy = new CompRational(17,2);
 
         CompRational[] comparray = {one, two,three};

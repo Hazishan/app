@@ -12,6 +12,7 @@ public interface Fractional {
      * get denominator
      */
     long getD();
+
     /**
      * add object by operand
      */

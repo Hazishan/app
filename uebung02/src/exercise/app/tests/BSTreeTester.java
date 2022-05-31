@@ -13,6 +13,7 @@ import java.util.Random;
  * Tests tree
  */
 public class BSTreeTester {
+
     /***
      *
      * @param args

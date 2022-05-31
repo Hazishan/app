@@ -19,14 +19,18 @@ public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollectio
     /***
      * Root starting point of tree
      */
+
     private Node<T> root=null;
     /***
      * currentFocus to navigate through Tree
      */
+
+
     private Node<T> currentFocus;
     /***
      * visual to visualize tree
      */
+    
     RedBlackTreeDrawer<T> visual = new RedBlackTreeDrawer<T>();
 
     /***

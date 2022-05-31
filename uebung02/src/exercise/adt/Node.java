@@ -37,6 +37,7 @@ public class Node<T> implements DrawableTreeElement<T> {
     }
 
 
+
     /**
      *
      * @param right

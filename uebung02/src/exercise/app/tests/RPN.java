@@ -25,6 +25,7 @@ public class RPN {
             if(args[i].matches("^[0-9]*[1-9][0-9]*$")){intcounter++;}
             if(args[i].matches("^[\\*,\\+,\\-,\\/]{1}$")){operatorcounter++;}
         }
+
         if(!(intcounter-1==operatorcounter)){
             throw new Exception("ERROR: Invalid amount of operators/operands");
         }

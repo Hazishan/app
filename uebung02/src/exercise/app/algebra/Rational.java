@@ -10,6 +10,7 @@ import java.util.Objects;
 
 public class Rational extends BasisFraction {
 
+
     /**
      * nummerator
      */

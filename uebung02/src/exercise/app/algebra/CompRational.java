@@ -17,6 +17,7 @@ public class CompRational extends Rational implements Comparable<CompRational> {
     }
 
 
+
     /***
      *
      * @param o object of any Type

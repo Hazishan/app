@@ -27,6 +27,7 @@ public class BSTreeIterator<T>  implements Iterator<T> {
         stackFiller(root);
     }
 
+
     /***
      *
      * @return boolean if stack is empty

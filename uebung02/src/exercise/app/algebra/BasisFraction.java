@@ -20,6 +20,7 @@ public abstract class BasisFraction implements Fractional {
         setND(this.getN()* operand.getD()+ operand.getN()*this.getD(),
                 this.getD()*operand.getD());
     }
+
     /**
     Subtracts two uebung02.src.algebra_unbuilt.Fractional values --> pattern:
     uses @see negation and @see add
