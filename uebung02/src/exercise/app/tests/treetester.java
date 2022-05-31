@@ -2,11 +2,8 @@ package src.exercise.app.tests;
 
 import src.exercise.adt.BSTree;
 import src.exercise.app.algebra.CompRational;
-import src.exercise.app.algebra.Rational;
-import src.exercise.visualtree.Node;
 
 import java.util.Arrays;
-import java.util.Iterator;
 
 public class treetester {
     public static void main(String[] args) {

@@ -1,24 +1,52 @@
 package src.exercise.adt;
 
-import src.exercise.app.algebra.CompRational;
-import src.exercise.visualtree.Node;
+import src.exercise.visualtree.RedBlackTreeDrawer;
 
 import java.util.*;
 
+/***
+ *
+ * @param <T>
+ *     Builds trees with T generics, which have to inherit from Comparable
+ *     Class inherits from AbstractCollection
+ * @see AbstractCollection
+ */
 public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollection<T>{
+    /***
+     * currentsize shows size of tree
+     */
     private int currentSize;
+    /***
+     * Root starting point of tree
+     */
     private Node<T> root=null;
+    /***
+     * currentFocus to navigate through Tree
+     */
     private Node<T> currentFocus;
+    /***
+     * visual to visualize tree
+     */
+    RedBlackTreeDrawer<T> visual = new RedBlackTreeDrawer<T>();
 
-
+    /***
+     * Default Constructor
+     */
     public BSTree(){}
 
-    /// TODO constructor
+    /***
+     *
+     * @param rootNode
+     */
     public BSTree(Node<T> rootNode){
         root = rootNode;
     }
 
-
+    /***
+     *
+     * @param nodeValue
+     * @return
+     */
     @Override
     public boolean add(T nodeValue) {
 
@@ -27,6 +55,7 @@ public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollectio
         if(root == null) {
             currentSize++;
             root = nodeToAdd;
+            visual.draw(root);
             return true;
         }
 
@@ -57,6 +86,7 @@ public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollectio
                 currentNode.setRight(nodeToAdd);
             }
             nodeToAdd.setRoot(currentNode);
+            visual.draw(root);
             currentSize++;
             return true;
 
@@ -64,13 +94,19 @@ public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollectio
 
     }
 
-
+    /***
+     *
+     * @return
+     */
     @Override
     public Iterator<T> iterator() {
         return new BSTreeIterator<>(root);
     }
 
-
+    /***
+     *
+     * @return size
+     */
     @Override
     public int size() {
         return currentSize;
@@ -78,14 +114,21 @@ public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollectio
     }
 
 
-
+    /***
+     *
+     * @return boolean
+     */
     @Override
     public boolean isEmpty(){
         return currentSize==0;
 
     }
 
-    /// TODO check T
+    /***
+     *
+     * @param o
+     * @return boolean
+     */
     @Override
     public boolean contains(Object o){
         currentFocus=root;
@@ -103,7 +146,11 @@ public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollectio
         return false;
     }
 
-    /// TODO containsAll
+    /***
+     *
+     * @param c
+     * @return boolean
+     */
     @Override
     public boolean containsAll(Collection<?> c){
         for(Object t:c){
@@ -115,7 +162,10 @@ public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollectio
     }
 
 
-    /// TODO toArray
+    /***
+     *
+     * @return array of tree
+     */
     @Override
     public Object[] toArray(){
         Iterator<T> iter= this.iterator();
@@ -128,6 +178,10 @@ public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollectio
         return arrayList;
     }
 
+    /***
+     *
+     * @return Smallest node
+     */
     public Node<T> getSmallest(){
         Node<T> currentFocus = root;
         while(currentFocus.hasLeft()){
@@ -136,6 +190,10 @@ public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollectio
         return currentFocus;
     }
 
+    /***
+     *
+     * @return Largest node
+     */
     public Node<T> getLargest(){
         Node<T> currentFocus = root;
         while(currentFocus.hasRight()){
@@ -150,6 +208,10 @@ public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollectio
     }
 
 **/
+    /***
+     *
+     * @return String of Tree
+     */
     @Override
     public String toString() {
         String output = "";

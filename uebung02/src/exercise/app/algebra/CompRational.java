@@ -2,6 +2,10 @@ package src.exercise.app.algebra;
 
 import src.exercise.app.algebra.Rational;
 
+/***
+ * extends Rational
+ * Important when retionals are compared --> correct output
+ */
 public class CompRational extends Rational implements Comparable<CompRational> {
     /***
      *

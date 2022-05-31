@@ -2,19 +2,27 @@ package src.exercise.app.tests;
 
 import src.exercise.adt.BSTree;
 import src.exercise.app.algebra.CompRational;
+import src.exercise.visualtree.RedBlackTreeDrawer;
 
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Random;
 
+/***
+ * Tests tree
+ */
 public class BSTreeTester {
+    /***
+     *
+     * @param args
+     */
     public static void main(String args[]) {
         if(args.length%2!=0){
             throw new IllegalArgumentException("Illegal Argument: no odd numbers allowed");
         }
 
-
+        RedBlackTreeDrawer<CompRational> visual = new RedBlackTreeDrawer<CompRational>();
 
         BSTree<CompRational> bsMain = new BSTree<>();
         BSTree<CompRational> bsEven = new BSTree<>();
@@ -72,6 +80,13 @@ public class BSTreeTester {
 
 
     }
+
+    /***
+     *
+     * @param x Double,
+     * @return CompRational
+     *
+     */
     static private CompRational convertDecimalToFraction(double x){
         double tolerance = 1.0E-3;
         double h1=1; double h2=0;
