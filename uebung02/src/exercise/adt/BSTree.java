@@ -1,5 +1,6 @@
 package src.exercise.adt;
 
+import src.exercise.app.algebra.CompRational;
 import src.exercise.visualtree.Node;
 
 import java.util.*;
@@ -7,6 +8,7 @@ import java.util.*;
 public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollection<T>{
     private int currentSize;
     private Node<T> root=null;
+    private Node<T> currentFocus;
 
 
     public BSTree(){}
@@ -86,12 +88,16 @@ public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollectio
     /// TODO check T
     @Override
     public boolean contains(Object o){
-        if(!(o instanceof T)){
-            return false;
-        }
-        for (T t : this) {
-            if (t.equals(o)) {
+        currentFocus=root;
+        while(currentFocus!=null){
+            if(currentFocus.getValue().compareTo((T) o)==0){
                 return true;
+            }
+            else if(currentFocus.getValue().compareTo((T) o)<0){
+                currentFocus= (Node<T>) currentFocus.getLeft();
+            }
+            else{
+                currentFocus=(Node<T>) currentFocus.getRight();
             }
         }
         return false;
@@ -121,12 +127,12 @@ public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollectio
         }
         return arrayList;
     }
-
+/**
     /// TODO remove
     public boolean remove(Object o){
     }
 
-
+**/
     @Override
     public String toString() {
         String output = "";

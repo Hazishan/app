@@ -21,7 +21,7 @@ public class CompRational extends Rational implements Comparable<CompRational> {
     @Override
     public int compareTo(CompRational o) {
         try {
-            if (o instanceof Rational) {
+            if (o != null) {
                 /***
                  * because both numbers are devided by their gdc,
                  * we can compare ad-bc
@@ -40,7 +40,7 @@ public class CompRational extends Rational implements Comparable<CompRational> {
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
-        if(!(o instanceof Rational)){
+        if(o == null){
             throw new IllegalArgumentException("Objects are incomparable");
         }
         return -2;

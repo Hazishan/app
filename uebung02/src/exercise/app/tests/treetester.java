@@ -2,6 +2,7 @@ package src.exercise.app.tests;
 
 import src.exercise.adt.BSTree;
 import src.exercise.app.algebra.CompRational;
+import src.exercise.app.algebra.Rational;
 import src.exercise.visualtree.Node;
 
 import java.util.Iterator;
@@ -20,11 +21,13 @@ public class treetester {
         myTree.add(five);
         myTree.add(six);
 
-        Iterator<CompRational> i= myTree.iterator();
+        CompRational oneCopy = new CompRational(17,1);
 
-        while(i.hasNext()){
-            System.out.println(i.next());
+        for (CompRational compRational : myTree) {
+            System.out.println(compRational);
         }
+
+        System.out.println(myTree.contains(oneCopy));
     }
 
 }
