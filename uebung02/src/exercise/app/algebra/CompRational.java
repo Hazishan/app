@@ -27,8 +27,7 @@ public class CompRational extends Rational implements Comparable<CompRational> {
                  * we can compare ad-bc
                  */
                 long Y;
-                Rational otherO = (Rational) o;
-                Y = this.getN() * otherO.getD() - this.getD() * otherO.getN();
+                Y = this.getN() * ((Rational) o).getD() - this.getD() * ((Rational) o).getN();
                 if (Y > 1) {
                     return 1;
                 } else if (Y == 0) {

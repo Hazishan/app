@@ -127,6 +127,23 @@ public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollectio
         }
         return arrayList;
     }
+
+    public Node<T> getSmallest(){
+        Node<T> currentFocus = root;
+        while(currentFocus.hasLeft()){
+             currentFocus= (Node<T>) currentFocus.getLeft();
+        }
+        return currentFocus;
+    }
+
+    public Node<T> getLargest(){
+        Node<T> currentFocus = root;
+        while(currentFocus.hasRight()){
+            currentFocus= (Node<T>) currentFocus.getRight();
+        }
+        return currentFocus;
+    }
+
 /**
     /// TODO remove
     public boolean remove(Object o){
@@ -138,7 +155,7 @@ public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollectio
         String output = "";
 
         for (T t : this) {
-            output += t;
+            output += t + " ";
 
         }
         return output;
