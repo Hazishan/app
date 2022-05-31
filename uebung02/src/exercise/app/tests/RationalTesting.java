@@ -12,6 +12,7 @@ public class RationalTesting {
     public static void main(String[] args) {
 
 
+
         Rational one = new Rational(5,6);
         Rational two = new Rational(1,5);
 
