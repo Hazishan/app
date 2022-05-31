@@ -21,8 +21,7 @@ public class treetester {
         myTree.add(five);
         myTree.add(six);
 
-        CompRational oneCopy = new CompRational(17,1);
-
+        CompRational oneCopy = new CompRational(17,1)
         for (CompRational compRational : myTree) {
             System.out.println(compRational);
         }
