@@ -5,6 +5,7 @@ import src.exercise.app.algebra.CompRational;
 import src.exercise.app.algebra.Rational;
 import src.exercise.visualtree.Node;
 
+import java.util.Arrays;
 import java.util.Iterator;
 
 public class treetester {
@@ -21,12 +22,14 @@ public class treetester {
         myTree.add(five);
         myTree.add(six);
 
-        CompRational oneCopy = new CompRational(17,1)
+        CompRational oneCopy = new CompRational(17,2);
+
+        CompRational[] comparray = {one, two,three};
         for (CompRational compRational : myTree) {
             System.out.println(compRational);
         }
-
-        System.out.println(myTree.contains(oneCopy));
+        System.out.println(myTree.contains(new CompRational(13,1)));
+        System.out.println(myTree.containsAll(Arrays.asList(comparray)));
     }
 
 }

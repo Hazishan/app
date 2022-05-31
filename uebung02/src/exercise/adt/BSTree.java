@@ -93,7 +93,7 @@ public class BSTree<T extends java.lang.Comparable<T>> extends AbstractCollectio
             if(currentFocus.getValue().compareTo((T) o)==0){
                 return true;
             }
-            else if(currentFocus.getValue().compareTo((T) o)<0){
+            else if(currentFocus.getValue().compareTo((T) o)>0){
                 currentFocus= (Node<T>) currentFocus.getLeft();
             }
             else{
